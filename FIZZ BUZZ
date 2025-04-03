@@ -1,0 +1,12 @@
+#### FIZZ BUZZ ####
+
+cislo = int(input("Zadej číslo: "))
+
+if cislo % 3 == 0 and cislo % 5 == 0:
+    print("FIZZ BUZZ")
+elif cislo % 5 == 0:
+    print("BUZZ")
+elif cislo % 3 == 0:
+    print("FIZZ")
+else:
+    print(cislo)
