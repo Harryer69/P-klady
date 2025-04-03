@@ -1,0 +1,9 @@
+#### Porovnávání desetinných čísel ####
+
+cislo_1 = float(input("Zadej čislo 1: "))
+cislo_2 = float(input("Zadej číslo 2: "))
+
+if cislo_1 < cislo_2:
+    print("Číslo jedna je menší než číslo dvě")
+else:
+    print("Číslo jedna je větší než číslo dvě")
