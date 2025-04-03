@@ -1,0 +1,22 @@
+#### BMI index ####
+
+# Rovnice pro výpočet BMI #
+
+jmeno = input("Zadejte jméno: ")
+vaha = int(input("Zadejte svou váhu: "))
+vyska = float(input("Zadejte svou výšku: "))
+
+
+bmi = vaha / vyska ** 2
+vysledek = round(bmi, 2)
+
+if bmi < 18.5:
+    print(jmeno, "tvoje BMI je,", vysledek, "což spadá do kategorie Podvýživa")
+elif bmi >= 18.5 and bmi < 25:
+    print(jmeno, "tvoje BMI je,", vysledek, "což spadá do kategorie Zdravá váha")
+elif bmi >= 25 and bmi < 30:
+    print(jmeno, "tvoje BMI je,", vysledek, "což spadá do kategorie Mírná nadváha")
+elif bmi >= 30 and bmi < 40:
+    print(jmeno, "tvoje BMI je,", vysledek, "což spadá do kategorie Obezita")
+else:
+    print(jmeno, "tvoje BMI je,", vysledek, "což spadá do kategorie Těžká obezita")
