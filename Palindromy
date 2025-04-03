@@ -1,0 +1,10 @@
+#### Program na rozpoznání palindromu ###
+
+zadana_slova = ["jaro", "jej", "kolo", "aha"]
+
+slovo = zadana_slova[1]
+
+if slovo == slovo[::-1]:
+    print(slovo, "je Palindrom")
+else:
+    print(slovo, "není Palindrom")
