@@ -1,0 +1,15 @@
+#### Počet písmen ve slově ####
+
+zadana_slova = ["Matouš", "Martin", "Ahoj", "er", "rs", "i", "a"]
+
+index = int(input("Index: "))
+
+delka_slova = len(zadana_slova[index])
+
+
+if delka_slova > 4:
+    print(zadana_slova[index], "má", delka_slova, "písmen")
+elif delka_slova > 1 and delka_slova <= 4:
+    print(zadana_slova[index], "má", delka_slova, "písmena")
+else:
+    print(zadana_slova[index], "má", delka_slova, "písmeno")
