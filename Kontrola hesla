@@ -1,0 +1,16 @@
+#### Kontrola hesla ####
+
+heslo = str(input("Zadejte heslo: "))
+
+if heslo == "":
+    print("Vynechal jsi pole s heslem!")
+elif heslo.isnumeric() or heslo[0].isnumeric():
+    print("Heslo nesmí začínat číselným znakem a musí obsahovat písmena")
+elif heslo.isalpha():
+    print("Heslo musí obsahovat jak číselné znaky, tak písmena")
+elif len(heslo) < 8:
+    print("Heslo musí být alespoň 8 znaků dlouhé")
+elif "@" in heslo:
+    print("Heslo nesmí obsahovat '@'")
+else:
+    print("Heslo je v pořádku")
