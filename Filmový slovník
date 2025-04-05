@@ -1,0 +1,50 @@
+#### Filmový slovník ####
+
+# Proměnné pro funkci Filmového sllovníku #
+nabidka = "Dostupné filmy(1)     Detaily filmu(2)     Seznam režisérů(3)"
+oddelovac = "=" * 62
+
+film_1 = {
+    "jmeno": "Shawshank Redemption",
+    "rating": "93/100",
+    "rok": 1994,
+    "reziser": "Frank Darabont",
+    "stopaz": 144
+}
+
+film_2 = {
+    "jmeno": "The Godfather",
+    "rating": "92/100",
+    "rok": 1972,
+    "reziser": "Francis Ford Coppola",
+    "stopaz": 175
+}
+
+film_3 = {
+    "jmeno": "The Dark Knight",
+    "rating": "90/100",
+    "rok": 2008,
+    "reziser": "Christopher Nolan",
+    "stopaz": 152
+}
+
+filmy = {"Film1": film_1, "Film2": film_2, "Film3": film_3}
+
+
+# Úvodní menu #
+
+print("VÍTEJ V NAŠEM FILMOVÉM SLOVNÍKU".center(62, ' '))
+print(oddelovac)
+print(nabidka.center(62, ' '))
+print(oddelovac)
+
+# Výběr filmu #
+
+ciselna_volba = input("Vberte si z menu: ".center(0, ' '))
+
+if ciselna_volba == "1":
+    print(f"{filmy["Film1"]["jmeno"]}, {filmy["Film2"]["jmeno"]}, {filmy["Film3"]["jmeno"]}")
+elif ciselna_volba == "2":
+    print(f"{filmy["Film1"]}, {filmy["Film2"]}, {filmy["Film3"]}")
+elif ciselna_volba == "3":
+    print(f"{filmy["Film1"]["reziser"]}, {filmy["Film2"]["reziser"]}, {filmy["Film3"]["reziser"]}")
