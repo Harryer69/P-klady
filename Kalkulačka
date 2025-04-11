@@ -1,0 +1,31 @@
+#### Kalkulačka ####
+
+while True:
+    # Zadaní operátorů + nebo - #
+    
+    operator = input("Vyber operátor + nebo - : ") 
+    operation = operator
+    
+    # Algoritmus pro výpočet #
+    if operation == "+":
+        number_1 = int(input("Zadej první číslo: "))
+        number_2 = int(input("Zadej druhé číslo: "))
+        print(number_1 + number_2)
+        choice = input("Chcete pokračovat ve výpočtech: Ano Ne: ")
+        if choice == "Ano":
+            continue
+        elif choice == "Ne":
+            print("Konec")
+            break
+    elif operation == "-":
+        number_1 = int(input("Zadej první číslo: "))
+        number_2 = int(input("Zadej druhé číslo: "))
+        print(number_1 - number_2)
+        choice = input("Chcete pokračovat ve výpočtech: Ano Ne: ")
+        if choice == "Ano":
+            continue
+        elif choice == "Ne":
+            print("Konec")
+            break
+    else:
+        print("Nezadali jste správný operátor")
