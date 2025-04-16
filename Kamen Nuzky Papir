@@ -1,0 +1,36 @@
+import random
+
+hodnoty = ["kamen", "nuzky", "papir"]
+
+pocitac = random.choice(hodnoty)
+
+while True:
+    hrac = input("Zadej hodnotu: ")
+    if hrac == pocitac:
+        print(f"Pocitac: {pocitac}")
+        print("Nerozhodně")
+        volba = input("Chceš hrát další hru? (ano) (ne): ")
+        if volba == "ne":
+            print("Konec hry")
+            break
+        else:
+            continue
+
+    elif (hrac == "kamen" and pocitac == "papir") or (hrac == "nuzky" and pocitac == "kamen") or (hrac == "papir" and pocitac == "nuzky"):
+        print(f"Pocitac: {pocitac}")
+        print("Prohrál jsi! :-(")
+        volba = input("Chceš hrát další hru? (ano) (ne): ")
+        if volba == "ne":
+            print("Konec hry")
+            break
+        else:
+            continue
+    else:
+        print(f"Pocitac: {pocitac}")
+        print("Vyhrál jsi :-)")
+        volba = input("Chceš hrát další hru? (ano) (ne): ")
+        if volba == "ne":
+            print("Konec hry")
+            break
+        else:
+            continue
