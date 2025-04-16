@@ -1,0 +1,14 @@
+import random
+
+min_hodnota = 1
+max_hodnota = 6
+sestka_na_kostce = True
+
+while sestka_na_kostce:
+    print("Házím kostkou")
+    kostka_hodota = random.randint(min_hodnota, max_hodnota)
+    print(f"Na kostce je číslo: {kostka_hodota}")
+    if kostka_hodota == 6:
+        sestka_na_kostce = True
+    else:
+        break
